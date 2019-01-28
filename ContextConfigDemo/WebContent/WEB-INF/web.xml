@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>ContextConfigDemo</display-name>
+
+
+	<context-param>
+		<param-name>WEBAPP</param-name>
+		<param-value>ADIT</param-value>
+	</context-param>
+
+
+	<servlet>
+		<description></description>
+		<display-name>ContextConfigDemo</display-name>
+		<servlet-name>ContextConfigDemo</servlet-name>
+		<servlet-class>in.ac.adit.servlet.ContextConfigDemo</servlet-class>
+		<init-param>
+			<param-name>CONFIGNAME</param-name>
+			<param-value>CONFIGVALUE</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ContextConfigDemo</servlet-name>
+		<url-pattern>/ContextConfigDemo</url-pattern>
+	</servlet-mapping>
+
+</web-app>
